@@ -5,24 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitthal Dhawale – Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="#" class="logo">VD</a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         </nav>
     </header>
     <main>
         <section id="hero">
-            <h1>Hi, I'm Vitthal</h1>
-            <p>Software Developer & Tech Enthusiast</p>
+            <h1>Hi, I'm <span class="accent">Vitthal Dhawale</span></h1>
+            <p class="subtitle">Software Developer & Tech Enthusiast</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer who loves building web applications
+               and exploring new technologies. Currently focused on full-stack
+               development with PHP, Python, and JavaScript.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Python</div>
+                <div class="skill-card">PHP / Laravel</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">HTML & CSS</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">Git & GitHub</div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Job Portal (Laravel)</h3>
+                    <p>Full-stack job board with auth, CRUD, and search.</p>
+                    <a href="https://github.com/vitthaldhawale/vd56-lab01">View →</a>
+                </article>
+                <article class="project-card">
+                    <h3>Utility Scripts</h3>
+                    <p>Collection of Python automation & helper scripts.</p>
+                    <a href="https://github.com/vitthaldhawale/vd56-repo01">View →</a>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2026 Vitthal Dhawale. All rights reserved.</p>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
